@@ -1,0 +1,28 @@
+.navbar-brand{
+    list-style: none;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn{
+    padding: 5px;
+    margin-left: 5px;
+    color: white;
+}
+.btn:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.btn:hover{
+    background-color: #f30b38;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+.btn-right{
+    position: relative;
+    left: 100%;
+}

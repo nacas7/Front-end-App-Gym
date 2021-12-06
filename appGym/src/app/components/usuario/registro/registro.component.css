@@ -1,0 +1,34 @@
+#imagen{
+    background-image: url('https://i.pinimg.com/564x/1a/f9/e2/1af9e27f62463b1d0c6d1c88d8e8b369.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: 44%;
+    left: 20%;
+    
+}
+#imagenGirl{
+    background-image: url('https://i.pinimg.com/564x/ed/57/6e/ed576e8bbc609b5f7cc53f4e4e1620e6.jpg');
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+}
+.form-control{
+    border: 0;
+    border-bottom: 2px solid grey;
+       
+}
+.form-control:focus{
+     border-bottom: 2px solid grey;
+     outline: none;
+}
+form{
+    padding-top: 20%;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+

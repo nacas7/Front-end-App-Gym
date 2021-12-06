@@ -1,0 +1,41 @@
+<div class="col-5 offset-3">
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input class="form-control" type="text" formControlName="nombre">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Apellidos</label>
+            <input class="form-control" type="text" formControlName="apellidos">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Dirección</label>
+            <input class="form-control" type="text" formControlName="direccion">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DNI</label>
+            <input class="form-control" type="text" formControlName="dni">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Fecha de nacimiento</label>
+            <input class="form-control" type="text" formControlName="fecha_nacimiento">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Edad</label>
+            <input class="form-control" type="text" formControlName="edad">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input class="form-control" type="text" formControlName="email">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Sexo</label>
+            <input class="form-control" type="text" formControlName="sexo">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Cuota</label>
+            <input class="form-control" type="text" formControlName="cuota">
+        </div>
+        <input type="submit" value="Enviar" class="btn btn-block btn-dark">
+    </form>
+</div>

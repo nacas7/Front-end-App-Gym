@@ -1,0 +1,13 @@
+<div class="col-5 offset-3">
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input class="form-control" type="text" formControlName="nombre">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Experiencia</label>
+            <input class="form-control" type="text" formControlName="experiencia">
+        </div>
+        <input type="submit" value="Enviar" class="btn btn-block btn-dark">
+    </form>
+</div>

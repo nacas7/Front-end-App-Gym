@@ -1,0 +1,15 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <ul class="nav navbar-brand">
+            <img src="https://st3.depositphotos.com/10312166/13573/v/600/depositphotos_135730728-stock-illustration-spartan-warrior-helmet.jpg"
+                alt="logotipo">
+            <button class="btn" [routerLink]="['/clientes']">Lista clientes</button>
+            <button class="btn" [routerLink]="['clientes/new']">Nuevo cliente</button>
+            <button class="btn" [routerLink]="['/profesores']">Profesores</button>
+            <button class="btn" [routerLink]="['/profesores/new']">Nuevo profesor</button>
+            <button class="btn btn-right" [routerLink]="['/registro']" *ngIf="!isLogged">Registro</button>
+            <button class="btn btn-right" [routerLink]="['/login']" *ngIf="!isLogged">Login</button>
+            <button class="btn btn-right" (click)="onClickLogout()" *ngIf="isLogged">Logout</button>
+        </ul>
+    </div>
+</nav>
