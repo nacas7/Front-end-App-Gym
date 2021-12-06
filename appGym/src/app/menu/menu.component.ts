@@ -9,11 +9,14 @@ import { UsuariosService } from '../usuarios.service';
 })
 export class MenuComponent implements OnInit {
 
+
+
   isLogged: boolean;
   constructor(private UsuariosService: UsuariosService,
     private router: Router
   ) {
     this.isLogged = false;
+
   }
 
   ngOnInit(): void {
@@ -29,6 +32,7 @@ export class MenuComponent implements OnInit {
       console.log('Acción de login', result);
       this.isLogged = result;
     })
+
 
 
   }

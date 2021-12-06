@@ -1,20 +1,11 @@
-<h2>Lista profesores</h2>
+<div>
+    <h2>Lista profesores</h2>
+</div>
 <div class="container">
-    <table class="table table-dark table-hover">
-        <ul>
-            <thead>
-                <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Experiencia</th>
-                </tr>
-            </thead>
-            <thead *ngFor="let profesor of profesores">
-                <tr>
-                    <td>{{profesor.nombre}}</td>
-                    <td>{{profesor.experiencia}}</td>
-                </tr>
-            </thead>
-        </ul>
-
-    </table>
+    <div class="row offset-2">
+        <div class="col-3 " *ngFor="let profesor of profesores">
+            <h5 class="card-title">{{profesor.nombre}}</h5>
+            <p class="card-text">Experiencia: {{profesor.experiencia}} años</p>
+        </div>
+    </div>
 </div>
