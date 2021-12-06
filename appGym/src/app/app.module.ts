@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegistroComponent } from './components/usuario/registro/registro.component';
 import { LoginComponent } from './components/usuario/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,13 +25,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormularioProfesoresComponent,
     MenuComponent,
     RegistroComponent,
-    LoginComponent
+    LoginComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

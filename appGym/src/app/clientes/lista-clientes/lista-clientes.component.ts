@@ -14,6 +14,8 @@ export class ListaClientesComponent implements OnInit {
     this.clientes = [];
   }
 
+  filterName = '';
+
   async ngOnInit() {
     const response = await this.ClientesService.getAll();
     this.clientes = response;
